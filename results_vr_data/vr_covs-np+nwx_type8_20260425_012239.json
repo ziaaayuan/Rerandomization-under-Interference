@@ -1,0 +1,145 @@
+{
+  "config": {
+    "n_units": 2000,
+    "graph_type": "ba",
+    "graph_m": 5,
+    "graph_k": 15,
+    "graph_p": 0.1,
+    "outcome_type": 8,
+    "beta0": 0.5,
+    "beta_treatment": 2.0,
+    "noise_std": 1.0,
+    "n_pre": 6,
+    "n_hidden": 1,
+    "rerand_covs": [
+      "neighbor_prop",
+      "neighbor_weighted_X"
+    ],
+    "acceptance_rate": 0.05,
+    "n_accepted": 2000,
+    "n_mc": 5000,
+    "p_treat": 0.5,
+    "ci_alpha": 0.05,
+    "seed": 2026
+  },
+  "model": {
+    "outcome_type": 8,
+    "description": "Type 8 (nonlin, exp$\\to$sum): dyn $= \\beta_3 \\sum_j \\exp(Z_j/|N_i|) + \\beta_4^\\top \\sum_j \\exp(Z_j X_j/|N_i|)$"
+  },
+  "block_stds": {
+    "std_pre": 1.996400093517947,
+    "std_trt": 4.563078476811425
+  },
+  "total_signal_std": 30.0,
+  "sweep": [
+    {
+      "target_log_ratio": -4.0,
+      "actual_log_ratio": -4.0,
+      "beta_pre": 14.997783987139194,
+      "beta_trt": 0.4101065967121108,
+      "var_raw": 1.802625441577864,
+      "variance_ratios": {
+        "static": 0.5012794529593092,
+        "dynamic": 0.9885777420318478,
+        "all": 0.6573061912369855
+      }
+    },
+    {
+      "target_log_ratio": -3.0,
+      "actual_log_ratio": -3.0,
+      "beta_pre": 14.911007266561434,
+      "beta_trt": 0.8154674649111959,
+      "var_raw": 1.809902613007495,
+      "variance_ratios": {
+        "static": 0.5372021233276799,
+        "dynamic": 0.9694465446851736,
+        "all": 0.6223928913901078
+      }
+    },
+    {
+      "target_log_ratio": -2.0,
+      "actual_log_ratio": -2.0,
+      "beta_pre": 14.57837790073131,
+      "beta_trt": 1.594552622328411,
+      "var_raw": 1.776758040921152,
+      "variance_ratios": {
+        "static": 0.547186434128612,
+        "dynamic": 1.1003161335593603,
+        "all": 0.6789185771071206
+      }
+    },
+    {
+      "target_log_ratio": -1.0,
+      "actual_log_ratio": -1.0,
+      "beta_pre": 13.440600317100845,
+      "beta_trt": 2.940209758209948,
+      "var_raw": 1.862138794593585,
+      "variance_ratios": {
+        "static": 0.6007502998316555,
+        "dynamic": 0.9675893254406955,
+        "all": 0.7065393513825909
+      }
+    },
+    {
+      "target_log_ratio": 0.0,
+      "actual_log_ratio": 3.203426503814917e-16,
+      "beta_pre": 10.625727530505008,
+      "beta_trt": 4.648879817298195,
+      "var_raw": 1.8381240378151407,
+      "variance_ratios": {
+        "static": 0.7464455866943873,
+        "dynamic": 0.9526219246024806,
+        "all": 0.7954629409082313
+      }
+    },
+    {
+      "target_log_ratio": 1.0,
+      "actual_log_ratio": 1.0,
+      "beta_pre": 6.7203001585504225,
+      "beta_trt": 5.880419516419896,
+      "var_raw": 1.850316123304203,
+      "variance_ratios": {
+        "static": 0.8968760474153517,
+        "dynamic": 0.9520778469552182,
+        "all": 0.8363146542107734
+      }
+    },
+    {
+      "target_log_ratio": 2.0,
+      "actual_log_ratio": 2.0,
+      "beta_pre": 3.6445944751828274,
+      "beta_trt": 6.378210489313644,
+      "var_raw": 1.8585743536971306,
+      "variance_ratios": {
+        "static": 0.9596897376645307,
+        "dynamic": 0.9477446450321713,
+        "all": 0.9376760074241609
+      }
+    },
+    {
+      "target_log_ratio": 3.0,
+      "actual_log_ratio": 3.0,
+      "beta_pre": 1.8638759083201792,
+      "beta_trt": 6.523739719289567,
+      "var_raw": 1.8407119997863808,
+      "variance_ratios": {
+        "static": 0.9620548330782384,
+        "dynamic": 0.917714825113253,
+        "all": 0.8645673922678339
+      }
+    },
+    {
+      "target_log_ratio": 4.0,
+      "actual_log_ratio": 4.0,
+      "beta_pre": 0.9373614991961996,
+      "beta_trt": 6.561705547393773,
+      "var_raw": 1.879384860937616,
+      "variance_ratios": {
+        "static": 0.9792391559821353,
+        "dynamic": 0.9841122200487594,
+        "all": 0.9746556030297592
+      }
+    }
+  ],
+  "timestamp": "2026-04-25T01:22:39.045521"
+}
